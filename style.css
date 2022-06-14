@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+}
+.nftBox{
+    width: 320px;
+    height: 560px;
+    margin: 10px auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+}
+.nftBox .preview{
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-image: url(./img/image-equilibrium.jpg);
+    background-size: cover;
+}
+.nftBox .preview figure{
+    width: 280px;
+    height: 280px;
+    display: flex;
+    background-color: hsla(0, 0, 0, 0);
+    border-radius: 10px;
+}
+.nftBox .preview img{
+    width: 64px;
+    height: 64px;
+    margin: auto auto;
+    opacity: 0;
+}
+.nftBox .preview:hover figure{
+    background-color: hsla(178, 100%, 50%, 0.425);
+}
+.nftBox .preview:hover img{
+    opacity: 1;
+}
+
+.nftBox .nftBoxTitle{
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: white
+}
+.nftBox p{
+    margin: 0 20px;
+    font-weight: 300;
+    width: 90%;
+    color: hsl(215, 51%, 70%);
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    font-size: 14px;
+}
+.nftBox .eth{
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(178, 100%, 50%);
+}
+.nftBox .eth img{
+    display: inline-flex;
+    vertical-align: -10%;
+    height: 1em;
+    align-self: center;
+}
+.nftBox .date{
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+.nftBox .date img{
+    display: inline-flex;
+    vertical-align: -10%;
+    height: 1em;
+    align-self: center;
+}
+.nftBox hr{
+    margin: 0 20px;
+    border: 1px solid;
+    border-color: hsl(215, 32%, 27%);
+}
+.nftBox .creator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 65%;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: hsl(215, 51%, 70%);
+}
+.nftBox .creator img{
+    height: 32px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 360px;
+}
+.nftBox .creator span{
+    margin-top: 3%;
+}
+.nftBox .creatorName{
+    color: white;
+    text-decoration: none;
+}
+.nftBox .nftBoxTitle:hover, .nftBox .creatorName:hover{
+    color: hsl(178, 100%, 50%);    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
